@@ -1,9 +1,9 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 59 - Crie um script que declare uma função que receba um array de números como parâmetro e retorne um novo array onde cada número seja elevado ao cubo.
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var numeros = [4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+const numerosAoCubo = () => {
+   return numeros.map(numero => numero ** 3 );
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+console.log(numerosAoCubo());

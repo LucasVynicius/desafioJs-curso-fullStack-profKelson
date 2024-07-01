@@ -1,9 +1,11 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 51 - Crie um script que declare uma função que receba um array de números como parâmetro e retorne um novo array onde cada número seja incrementado em 5.
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var numeros = [1, 2, 3, 4, 5, 6, 7];
+
+const numerosIncrementado = (numeros) => {
+   return numeros.map(numero => numero + 5);
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+const resultado = numerosIncrementado(numeros);
+
+console.log(resultado);

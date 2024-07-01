@@ -1,9 +1,9 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 56 - Crie um script que declare uma função que receba um array de números como parâmetro e retorne um novo array contendo apenas os números que são múltiplos de 4.
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var numeros = [40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60];
+
+const numerosMultiplosDeQuatro = () => {
+   return numeros.filter(numero => numero % 4 === 0);
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+console.log(numerosMultiplosDeQuatro());

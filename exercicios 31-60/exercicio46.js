@@ -1,9 +1,11 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 46 - Crie um script que declare uma função que receba um array de strings como parâmetro e retorne um novo array contendo apenas as strings que contêm a letra "e".
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var palavras = ['estou', 'sou', 'esta', 'essa', 'ta', 'nunca'];
+
+const palavrasComLetraE = (palavras) => {
+   return palavras.filter(palavra => palavra.includes('e') || palavra.includes('E'));
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+const resultado = palavrasComLetraE(palavras);
+
+console.log(resultado);

@@ -1,9 +1,11 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 48 - Crie um script que declare uma função que receba um array de números como parâmetro e retorne um novo array contendo apenas os números que são ímpares.
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var numeros = [21, 22, 23, 24, 30, 31, 33, 37];
+
+const numerosImpares = (numeros) => {
+   return numeros.filter(numero => numero % 2 !== 0);
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+const resultado = numerosImpares(numeros);
+
+console.log(resultado);

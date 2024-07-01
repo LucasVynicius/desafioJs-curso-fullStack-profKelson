@@ -1,9 +1,11 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 47 - Crie um script que declare uma função que receba um array de números como parâmetro e retorne um novo array onde cada número seja multiplicado por 10.
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var numeros = [3, 4, 5, 6, 7, 8, 9];
+
+const multiplicandoPorDez = (numeros) => {
+   return numeros.map(numero => numero * 10);
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+const resultado = multiplicandoPorDez(numeros);
+
+console.log(resultado);

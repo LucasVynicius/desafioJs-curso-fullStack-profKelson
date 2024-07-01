@@ -1,9 +1,11 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 45 - Crie um script que declare uma função que receba um array de strings como parâmetro e retorne um novo array onde cada string esteja em letras maiúsculas e invertida.
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var nomes = ['lucas', 'Eduarda', 'Miguel', 'Noah'];
+
+const letrasInvertidas = (nomes) => {
+   return nomes.map(nome => nome.toUpperCase().split('').reverse().join(''));
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+const resultado = letrasInvertidas(nomes);
+
+console.log(resultado);

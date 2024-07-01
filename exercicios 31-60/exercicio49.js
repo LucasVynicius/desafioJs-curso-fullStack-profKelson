@@ -1,9 +1,14 @@
-// 30 - Crie um script que declare um objeto chamado carro com as propriedades modelo, ano e cor. Inicialize o objeto com valores e imprima todas as propriedades usando console.log.
+// 49 - Crie um script que declare uma função que receba um array de strings como parâmetro e retorne um novo array onde cada string tenha a última letra em maiúscula. Utilize a função toUpperCase() para converter a última letra.
 
-const carro = {
-   modelo: 'BMW',
-   ano: 2024,
-   cor: 'Prata'
+var nomes = ['lucas', 'miguel', 'eduarda', 'noah'];
+
+const converterPrimeireLetraDoNome = (nomes) => {
+   return nomes.map(nome => {
+      let tamanho = nome.length;
+      let ultimaLetra = nome.charAt(tamanho -1).toUpperCase()
+      return nome.slice(0, tamanho -1) + ultimaLetra;
+   });
 }
 
-console.log(`Comprei o carro de modelo: ${carro.modelo}, ano ${carro.ano} de cor ${carro.cor}`);
+const resultado = converterPrimeireLetraDoNome(nomes);
+console.log(resultado);
